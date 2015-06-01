@@ -1,0 +1,53 @@
+<html>
+<head> 
+	<title>Timmy's Website</title>
+	 <link href="website timmy.css" rel="stylesheet">
+	 <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+	 <script src="myScript.js"></script>
+</head>
+<body>
+
+
+<h1>Wow! Timmy Brown is so cool</h1>
+<p> he's better than Claire youngerman</p>
+<h2>See for yourself, click on the image of Claire to remove her makeup!
+</h2>
+
+
+<h3>
+<img id="myImage" onclick="changeImage()" src="pic_claire.jpg" width="325" height="480">
+
+</h3>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("riffraff")) {
+        image.src = "pic_claire.jpg";
+    } else {
+        image.src = "pic_riffraff.png";
+    }
+}
+</script>
+<h4>
+
+	Now, click on Timmy to see what hes hiding!
+</h4>
+
+<h5>
+<img id="myImage2" onclick="changeImageb()" src="pic_bulboff.jpg" width="480" height="480" align="middle">
+</h5>
+
+<script>
+function changeImageb() {
+    var image = document.getElementById('myImage2');
+    if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.jpg";
+    } else {
+        image.src = "pic_bulbon.png";
+    }
+}
+</script>
+
+</body>
+</html>
